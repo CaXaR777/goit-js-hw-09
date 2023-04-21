@@ -39,13 +39,15 @@ const options = {
     const startTimer = Date.now();
     // console.log(startTimer)
     if (selectedDates[0] < startTimer) {
-      startBtn.disabled = true;
+    //   startBtn.disabled = true;
 
       Notify.failure(`❌ Please choose a date in the future`);
+      startBtn.disabled = true;
     }
-    startBtn.disabled = false;
+    else {startBtn.disabled = false
     //   console.log(selectedDates[0]);
-    return setDate;
+    // return setDate;
+}
   },
 };
 
